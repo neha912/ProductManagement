@@ -1,0 +1,8 @@
+<div class="col-md-8">
+	<% if current_user.present? %>
+    <p>Email : <%= current_user.email %></p>
+    <p>First Name : <%= current_user.first_name %></p>
+    <p>Last Name : <%= current_user.last_name  %></p>
+    <p> Profile Picture : <%= image_tag current_user.profile_image.url %></p>
+	<% end %>
+</div>

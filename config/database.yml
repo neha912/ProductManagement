@@ -1,0 +1,11 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: root1
+  password: root1
+  host: localhost
+
+development:
+  <<: *default
+  database: product_management

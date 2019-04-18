@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  auth_token: MyString
+  device_type: MyString
+  device_token: MyString
+  user: one
+
+two:
+  auth_token: MyString
+  device_type: MyString
+  device_token: MyString
+  user: two

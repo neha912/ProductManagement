@@ -1,0 +1,26 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+    <%= link_to "PRODUCT MANAGEMENT", root_url, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+            <li>Logged in as <%= current_user.email %></li>
+            <li><%= link_to "All Products", products_path %></li>
+            <li><%= link_to "Create Products", new_product_path %></li>
+            <li><%= link_to "Profile", users_show_path %></li>
+            <li><%= link_to "Settings", edit_user_registration_path %></li>
+            <li><%= link_to "log out", destroy_user_session_path, method: "delete"  %></li>
+        <% else %>
+            <li><%= link_to "Home",   root_path %></li>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
+            <li><%= link_to "Log in", new_user_session_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  
+  
+   
+  
+  
